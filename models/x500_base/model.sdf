@@ -64,13 +64,17 @@
         </geometry>
       </visual>
       <visual name="NXP_FMUK66_FRONT">
+        <!-- <pose>0.047 .001 .043 1 0 1.57</pose> -->
         <pose>0.047 .001 .043 1 0 1.57</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
-          <plane>
+          <!-- <plane>
             <normal>0 0 1</normal>
             <size>.013 .007</size>
-          </plane>
+          </plane> -->
+          <box>
+            <size>.013 .007 0.0001</size>
+          </box>
         </geometry>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
@@ -83,13 +87,17 @@
         </material>
       </visual>
       <visual name="NXP_FMUK66_TOP">
-        <pose>-0.023 0 .0515 0 0 -1.57</pose>
+        <!-- <pose>-0.023 0 .0515 0 0 -1.57</pose> -->
+        <pose>-0.023 0 .0515 0 0 0</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
-          <plane>
+          <!-- <plane>
             <normal>0 0 1</normal>
             <size>.013 .007</size>
-          </plane>
+          </plane> -->
+          <box>
+            <size>.007 .013 0.0001</size>
+          </box>
         </geometry>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
@@ -102,13 +110,17 @@
         </material>
       </visual>
       <visual name="RDDRONE_FMUK66_TOP">
-        <pose>-.03 0 .0515 0 0 -1.57</pose>
+        <!-- <pose>-.03 0 .0515 0 0 -1.57</pose> -->
+        <pose>-.03 0 .0515 0 0 0</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
-          <plane>
+          <!-- <plane>
             <normal>0 0 1</normal>
             <size>.032 .0034</size>
-          </plane>
+          </plane> -->
+          <box>
+            <size>.0034 .032 0.0001</size>
+          </box>
         </geometry>
         <material>
           <diffuse>1.0 1.0 1.0</diffuse>
@@ -366,7 +378,7 @@
         </surface>
       </collision>
     </link>
-    <joint name="rotor_0_joint" type="revolute">
+    <joint name="rotor_0_joint" type="fixed">
       <parent>base_link</parent>
       <child>rotor_0</child>
       <axis>
@@ -438,7 +450,7 @@
         </surface>
       </collision>
     </link>
-    <joint name="rotor_1_joint" type="revolute">
+    <joint name="rotor_1_joint" type="fixed">
       <parent>base_link</parent>
       <child>rotor_1</child>
       <axis>
@@ -510,7 +522,7 @@
         </surface>
       </collision>
     </link>
-    <joint name="rotor_2_joint" type="revolute">
+    <joint name="rotor_2_joint" type="fixed">
       <parent>base_link</parent>
       <child>rotor_2</child>
       <axis>
@@ -582,7 +594,7 @@
         </surface>
       </collision>
     </link>
-    <joint name="rotor_3_joint" type="revolute">
+    <joint name="rotor_3_joint" type="fixed">
       <parent>base_link</parent>
       <child>rotor_3</child>
       <axis>
