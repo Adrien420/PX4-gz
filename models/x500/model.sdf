@@ -78,7 +78,7 @@
     <joint name="LidarJoint" type="fixed">
       <parent>base_link</parent>
       <child>link</child>
-      <pose relative_to="base_link">-.1 0 .26 0 0 0</pose>
+      <pose>0.0 0 .055 0 0 0</pose>
     </joint>
 
     <!-- Camera -->

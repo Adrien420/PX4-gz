@@ -65,6 +65,8 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
+
+        <gz_frame_id> camera_link </gz_frame_id>
       </sensor>
       <gravity>true</gravity>
       <velocity_decay/>

@@ -72,6 +72,8 @@
         <always_on>0</always_on>
         <update_rate>30</update_rate>
         <visualize>false</visualize>
+
+        <gz_frame_id> link </gz_frame_id>
       </sensor>
     </link>
   </model>
