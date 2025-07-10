@@ -4,7 +4,7 @@
     <pose>0 0 0 0 0 0</pose>
     <self_collide>false</self_collide>
     <static>false</static>
-    <link name="camera_link">
+    <link name="depth_camera_link">
       <inertial>
         <pose>0.00358 -0.03 .014 0 0 0</pose>
         <mass>0.061</mass>
@@ -50,6 +50,8 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
+
+        <gz_frame_id> depth_camera_link </gz_frame_id>
       </sensor>
       <sensor name="StereoOV7251" type="depth_camera">
         <pose>0.01233 -0.03 .01878 0 0 0</pose>
@@ -68,13 +70,11 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
-        <topic>depth_camera</topic>
+
+        <gz_frame_id> depth_camera_link </gz_frame_id>
       </sensor>
       <gravity>true</gravity>
       <velocity_decay/>
     </link>
-    <!-- <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
-      <render_engine>ogre2</render_engine>
-    </plugin> -->
   </model>
 </sdf>
