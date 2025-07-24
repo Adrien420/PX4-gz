@@ -69,6 +69,8 @@
       <motorType>velocity</motorType>
     </plugin>
 
+    <!-- Sensors -->
+
     <!-- Lidar 2d -->
     <include merge='true'>
       <uri>model://lidar_2d_v2</uri>
